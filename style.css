@@ -1,0 +1,113 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+
+body{
+	background-image: url(image/Flower.png);
+	background-size: cover;
+}
+
+p{
+	text-align: center;
+	color: white;
+	font-family: cursive;
+}
+
+.textNormal {
+	font-size:20px;
+}
+
+.textGrow {
+	font-size: 30px;
+}
+
+#rectangle{
+	width:100px;
+	height:100px;
+	margin: 10px auto;
+	position: absolute;
+	top:600px;
+	left:50%;
+	transition: 0.5s;
+	box-shadow: 2px 2px 5px black;
+}
+
+.blue{
+	background: linear-gradient(to top, white, blue) ;
+}
+
+.green{
+	background: linear-gradient(to top, white, green);
+}
+
+button{
+	text-align: center;
+}
+
+.btn-group button {
+    background-color: rgb(222,12,50); 
+    border: 1px solid black; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+	width: 200px;
+	display: block;
+	font-family: cursive;
+	border-radius: 35px 5px 35px 5px;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+
+/* Add a background color on hover */
+.btn-group button:hover {
+	background-color: rgb(188,12,50);
+}
+
+.disappear {
+	visibility: hidden;
+}
+
+.appear{
+	visibility: visible;
+}
+
+.btn-group{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+}
+
+@media all and (max-width : 600px){
+
+	.btn-group {
+		display: flex;
+		flex-direction: column;
+		margin-left: 30%;
+
+}
+
+}
+
+@media all and (max-width : 350px){
+
+	.btn-group {
+		display: flex;
+		flex-direction: column;
+		margin-left: 25%;
+
+}
+
+	p{
+		text-align: center;
+		margin-left: 0;
+		font-size: 10px;
+	}
+
+}
